@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001200</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>led</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>C:/Users/Jirka/Documents/Projekty/CPLD/LED/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/jirka/documents/projekty/cpld/led/blink.vhd(6): </Dynamic>
+            <Dynamic>led</Dynamic>
+            <Navigation>c:/users/jirka/documents/projekty/cpld/led/blink.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/jirka/documents/projekty/cpld/led/blink.vhd(11): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/users/jirka/documents/projekty/cpld/led/blink.vhd</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/jirka/documents/projekty/cpld/led/blink.vhd(6): </Dynamic>
+            <Dynamic>led</Dynamic>
+            <Navigation>c:/users/jirka/documents/projekty/cpld/led/blink.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/jirka/documents/projekty/cpld/led/blink.vhd(11): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/users/jirka/documents/projekty/cpld/led/blink.vhd</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/jirka/documents/projekty/cpld/led/blink.vhd(9): </Dynamic>
+            <Dynamic>led</Dynamic>
+            <Dynamic>RTL</Dynamic>
+            <Navigation>c:/users/jirka/documents/projekty/cpld/led/blink.vhd</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

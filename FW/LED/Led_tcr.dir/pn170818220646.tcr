@@ -1,0 +1,4 @@
+#Start recording tcl command: 8/18/2017 21:47:32
+#Project Location: C:/Users/Jirka/Documents/Projekty/CPLD/LED; Project name: Led
+prj_project open "C:/Users/Jirka/Documents/Projekty/CPLD/LED/Led.ldf"
+#Stop recording: 8/18/2017 22:06:46
