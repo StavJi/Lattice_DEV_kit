@@ -18137,6 +18137,8 @@ DIN A3, landscape with location and doc. field</description>
 <part name="D1" library="#PaJa_22" deviceset="1N4007" device="_SM-1"/>
 <part name="D2" library="#PaJa_22" deviceset="1N4007" device="_SM-1"/>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
+<part name="R30" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18148,22 +18150,16 @@ DIN A3, landscape with location and doc. field</description>
 C = Complement</text>
 <text x="365.76" y="205.74" size="1.778" layer="91">HDSP-U111</text>
 <text x="365.76" y="203.2" size="1.778" layer="91">512-187</text>
-<text x="114.3" y="40.64" size="1.778" layer="91">SCK/TCK</text>
-<text x="114.3" y="38.1" size="1.778" layer="91">Mode/TMS</text>
-<text x="114.3" y="35.56" size="1.778" layer="91">STDI/TDI</text>
-<text x="114.3" y="33.02" size="1.778" layer="91">SDO/TDO</text>
-<text x="114.3" y="30.48" size="1.778" layer="91">TRST</text>
-<text x="144.78" y="40.64" size="1.778" layer="91">GND</text>
-<text x="144.78" y="38.1" size="1.778" layer="91">GND</text>
-<text x="144.78" y="35.56" size="1.778" layer="91">VCC</text>
-<text x="144.78" y="33.02" size="1.778" layer="91">INIT</text>
-<text x="144.78" y="30.48" size="1.778" layer="91">PROG</text>
-<text x="132.08" y="27.94" size="1.778" layer="91">8,9,10</text>
-<text x="93.98" y="25.4" size="1.778" layer="91">8,9,10</text>
-<text x="93.98" y="22.86" size="1.778" layer="91">?</text>
-<text x="132.08" y="25.4" size="1.778" layer="91">?</text>
-<text x="154.94" y="30.48" size="1.778" layer="91">81</text>
-<text x="154.94" y="33.02" size="1.778" layer="91">77</text>
+<text x="119.38" y="55.88" size="1.778" layer="91">SCK/TCK</text>
+<text x="119.38" y="53.34" size="1.778" layer="91">Mode/TMS</text>
+<text x="119.38" y="50.8" size="1.778" layer="91">STDI/TDI</text>
+<text x="119.38" y="48.26" size="1.778" layer="91">SDO/TDO</text>
+<text x="119.38" y="45.72" size="1.778" layer="91">TRST</text>
+<text x="149.86" y="55.88" size="1.778" layer="91">GND</text>
+<text x="149.86" y="53.34" size="1.778" layer="91">GND</text>
+<text x="149.86" y="50.8" size="1.778" layer="91">VCC</text>
+<text x="149.86" y="48.26" size="1.778" layer="91">INIT</text>
+<text x="149.86" y="45.72" size="1.778" layer="91">PROG</text>
 <text x="355.6" y="83.82" size="1.778" layer="91">io2</text>
 <text x="355.6" y="81.28" size="1.778" layer="91">io1</text>
 </plain>
@@ -18395,6 +18391,11 @@ C = Complement</text>
 <instance part="D1" gate="D" x="53.34" y="210.82" rot="R90"/>
 <instance part="D2" gate="D" x="43.18" y="228.6"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="R30" gate="G$1" x="109.22" y="55.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="107.7214" y="52.07" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="107.442" y="57.15" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V11" gate="G$1" x="109.22" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -19198,30 +19199,6 @@ C = Complement</text>
 <label x="261.112" y="53.34" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="IO4" class="0">
-<segment>
-<wire x1="30.48" y1="127" x2="38.1" y2="127" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="4"/>
-<label x="34.544" y="127.254" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC5" gate="G$1" pin="PT10D/PROGRAMN"/>
-<wire x1="302.26" y1="58.42" x2="302.26" y2="53.34" width="0.1524" layer="91"/>
-<label x="301.752" y="54.102" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="IO2" class="0">
-<segment>
-<wire x1="30.48" y1="129.54" x2="38.1" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="2"/>
-<label x="34.544" y="129.794" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC5" gate="G$1" pin="PT11C/INITN"/>
-<wire x1="312.42" y1="58.42" x2="312.42" y2="53.34" width="0.1524" layer="91"/>
-<label x="312.166" y="53.848" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
 <net name="IO6" class="0">
 <segment>
 <pinref part="JP4" gate="A" pin="6"/>
@@ -19882,14 +19859,14 @@ C = Complement</text>
 </net>
 <net name="N$25" class="0">
 <segment>
-<wire x1="129.54" y1="38.1" x2="129.54" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="43.18" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="43.18" x2="139.7" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="30.48" x2="129.54" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="30.48" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="35.56" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="35.56" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="38.1" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="53.34" x2="134.62" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="58.42" x2="144.78" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="45.72" x2="134.62" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="45.72" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="50.8" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="50.8" x2="137.16" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="53.34" x2="134.62" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -20180,6 +20157,11 @@ C = Complement</text>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 <wire x1="30.48" y1="71.12" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R30" gate="G$1" pin="2"/>
+<pinref part="+3V11" gate="G$1" pin="+3V3"/>
+<wire x1="109.22" y1="60.96" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$42" class="0">
 <segment>
@@ -20197,6 +20179,44 @@ C = Complement</text>
 <pinref part="X1" gate="G$1" pin="1"/>
 <pinref part="D2" gate="D" pin="A"/>
 <wire x1="35.56" y1="228.6" x2="40.64" y2="228.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="IO2_INITN" class="0">
+<segment>
+<pinref part="IC5" gate="G$1" pin="PT11C/INITN"/>
+<wire x1="312.42" y1="58.42" x2="312.42" y2="53.34" width="0.1524" layer="91"/>
+<label x="312.166" y="45.72" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="30.48" y1="129.54" x2="38.1" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="A" pin="2"/>
+<label x="34.544" y="129.794" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J" pin="8"/>
+<wire x1="101.6" y1="35.56" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
+<label x="117.348" y="36.576" size="1.778" layer="95"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="35.56" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="50.8" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
+<junction x="109.22" y="35.56"/>
+</segment>
+</net>
+<net name="IO4_PROGRAMN" class="0">
+<segment>
+<pinref part="IC5" gate="G$1" pin="PT10D/PROGRAMN"/>
+<wire x1="302.26" y1="58.42" x2="302.26" y2="53.34" width="0.1524" layer="91"/>
+<label x="302.006" y="37.338" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="30.48" y1="127" x2="38.1" y2="127" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="A" pin="4"/>
+<label x="34.544" y="127.254" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J" pin="10"/>
+<wire x1="101.6" y1="33.02" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
+<label x="109.22" y="33.528" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
